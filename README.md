@@ -1,4 +1,4 @@
-# vaidya
+# Vaidya.AI
 
 A new Flutter application.
 
