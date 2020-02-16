@@ -10,8 +10,11 @@ To know more about Flutter visit https://flutter.dev/.
 ### Prerequisites
 
 1.Dart
+
 2.Flutter Framework
+
 3.Emulator
+
 4.Android Devices (optional)
 
 
@@ -41,7 +44,6 @@ The App can be deployed on Android Devices by converting the code to APK using t
 
 * [Flutter](https://flutter.dev/docs) - The Frontend framework used
 * [Dart](https://dart.dev/guides) - For back-end
-* 
 
 
 ## Versioning
