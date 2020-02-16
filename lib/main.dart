@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:cryptoutils/cryptoutils.dart';
+import 'package:flutter_app_non_x_recorder/pdf_1.dart';
 
 import 'package:flutter/material.dart';
 import 'dart:io' as io;
@@ -10,7 +11,6 @@ import 'package:path_provider/path_provider.dart';
 
 import 'package:googleapis/speech/v1.dart';
 import 'package:googleapis_auth/auth_io.dart';
-
 
 final _credentials = new ServiceAccountCredentials.fromJson(r'''
 {
@@ -28,7 +28,7 @@ final _credentials = new ServiceAccountCredentials.fromJson(r'''
 ''');
 
 const _SCOPES = const [SpeechApi.CloudPlatformScope];
-List ll=['  ','  ','  ','  ','  '];
+List ll = ['  ', '  ', '  ', '  ', '  '];
 
 void main() => runApp(MyApp());
 
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future _startRecording() async {
     await _recorder.start();
-    ll=['  ','  ','  ','  ','  '];
+    ll = ['  ', '  ', '  ', '  ', '  '];
     var current = await _recorder.current();
     setState(() {
       _recording = current;
@@ -171,38 +171,38 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-Future<void> _speechToText() async {
-  var bytes = await new File(_recording.path).readAsBytesSync();
-  // Do something with the bytes. For example, convert to base64.
-  String content = CryptoUtils.bytesToBase64(bytes);
-  clientViaServiceAccount(_credentials, _SCOPES).then((httpClient) {
-    var speech = new SpeechApi(httpClient);
-    RecognizeRequest r = new RecognizeRequest();
-    RecognitionAudio audio = new RecognitionAudio.fromJson({ 'content': content});
-    r.audio = audio;
-    
-    final _json = {
+  Future<void> _speechToText() async {
+    var bytes = await new File(_recording.path).readAsBytesSync();
+    // Do something with the bytes. For example, convert to base64.
+    String content = CryptoUtils.bytesToBase64(bytes);
+    clientViaServiceAccount(_credentials, _SCOPES).then((httpClient) {
+      var speech = new SpeechApi(httpClient);
+      RecognizeRequest r = new RecognizeRequest();
+      RecognitionAudio audio =
+          new RecognitionAudio.fromJson({'content': content});
+      r.audio = audio;
+
+      final _json = {
         "encoding": "LINEAR16",
         "sampleRateHertz": 22050,
         "languageCode": "en-IN"
- 
-    };
-    RecognitionConfig config = new RecognitionConfig.fromJson(_json);
-    r.config = config;
-    var count=0;
-    speech.speech.recognize(r).then((response) {
-      for (var result in response.results) {
-        var res=result.toJson();
-        var res0=res.values.toList();
-        var res1=res0[0].toString();
-        var res2=res1.split(":");
-        var res3=res2[res2.length-1];
-        ll.insert(count,res3.substring(0,res3.length-2));
-        count++;
-      }
+      };
+      RecognitionConfig config = new RecognitionConfig.fromJson(_json);
+      r.config = config;
+      var count = 0;
+      speech.speech.recognize(r).then((response) {
+        for (var result in response.results) {
+          var res = result.toJson();
+          var res0 = res.values.toList();
+          var res1 = res0[0].toString();
+          var res2 = res1.split(":");
+          var res3 = res2[res2.length - 1];
+          ll.insert(count, res3.substring(0, res3.length - 2));
+          count++;
+        }
+      });
     });
-  });
-}
+  }
 
   Widget _playerIcon(RecordingStatus status) {
     switch (status) {
@@ -279,7 +279,7 @@ Future<void> _speechToText() async {
                 height: 20,
               ),
               Text(
-                'Prescription',
+                'Medication',
                 style: Theme.of(context).textTheme.title,
               ),
               SizedBox(
@@ -306,7 +306,6 @@ Future<void> _speechToText() async {
               SizedBox(
                 height: 20,
               ),
-
               SizedBox(
                 height: 200,
               ),
@@ -318,6 +317,14 @@ Future<void> _speechToText() async {
                     ? _speechToText
                     : null,
               ),
+              SizedBox(
+                height: 20,
+              ),
+              RaisedButton(
+                  child: Text('Generate PDF'),
+                  disabledTextColor: Colors.white,
+                  disabledColor: Colors.grey.withOpacity(0.5),
+                  onPressed: pdfdoc),
               SizedBox(
                 height: 20,
               ),

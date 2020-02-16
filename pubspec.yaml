@@ -30,7 +30,9 @@ dependencies:
   googleapis_auth: ^0.2.7
   cryptoutils: ^0.4.0
   overlay_support: ^1.0.0
-  
+  pdf: ^1.4.1
+  google_fonts: ^0.3.9
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
