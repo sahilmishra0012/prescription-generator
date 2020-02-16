@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-
 import 'package:cryptoutils/cryptoutils.dart';
 
 import 'package:flutter/material.dart';
@@ -288,6 +287,20 @@ Future<void> _speechToText() async {
               ),
               Text(
                 ll.elementAt(3),
+                style: Theme.of(context).textTheme.body1,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Tests',
+                style: Theme.of(context).textTheme.title,
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                ll.elementAt(4),
                 style: Theme.of(context).textTheme.body1,
               ),
               SizedBox(

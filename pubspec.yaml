@@ -29,7 +29,8 @@ dependencies:
   googleapis: ^0.53.0
   googleapis_auth: ^0.2.7
   cryptoutils: ^0.4.0
-
+  overlay_support: ^1.0.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
