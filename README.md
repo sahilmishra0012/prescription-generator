@@ -25,9 +25,11 @@ To get started, just fork or clone the GitHub Repository.
 To clone the repository: git clone https://github.com/sahilmishra0012/prescription-generator.git
 
 To download Flutter - https://flutter.dev/docs/get-started/install
+
 Readme - https://flutter.dev/docs
 
 To download Dart - https://dart.dev/get-dart
+
 Readme - https://dart.dev/guides
 
 ## Running the tests
