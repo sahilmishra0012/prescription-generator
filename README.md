@@ -1,4 +1,4 @@
-# vAIdya - Speech-to-text based prescription generator for doctors
+# vAIdya - Speech-to-Text based prescription generator for doctors
 
 This project aims to provide the facility of an automatic prescription generation from the voice of the doctors. This consists of a cross-platform app developed using Flutter as Frontend Framework built on the top of Backend using Dart.
          
