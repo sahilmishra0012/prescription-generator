@@ -198,6 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
           var res2 = res1.split(":");
           var res3 = res2[res2.length - 1];
           ll.insert(count, res3.substring(0, res3.length - 2));
+          print(ll.elementAt(count));
           count++;
         }
       });
