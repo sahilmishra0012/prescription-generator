@@ -1,0 +1,21 @@
+<%- include('partials/header'); %>
+<div id="root">
+    <form action="/prescription" class="create-complaint" method="GET">
+        <button type="submit" class="forgot">Register Complaint</button>
+    </form>
+</div>
+
+    <% list.forEach(element => {%>
+        <div id="issue">
+        <form action="/home" method="POST">
+        <h4>+<%=element.upvotes%></h4>
+        <h1><%=element.title%></h1>
+        <p><%=element.content%></p>
+        <input type="hidden" name="userId" value="<%=Id%>">
+        <button type="submit" name="upvote" value="<%=element._id%>">Upvote</button>
+    </form>
+    </div>
+    <%});%>
+
+
+<%- include('partials/footer'); %>
