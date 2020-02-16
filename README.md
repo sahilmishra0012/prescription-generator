@@ -52,6 +52,10 @@ The App can be deployed on Android Devices by converting the code to APK using t
 
 This is the first version. Stay tuned for more updates.
 
+## Project Presentation
+
+Link to the project presentation: https://prezi.com/p/edit/4jvcfyfg2jix/
+
 ## Authors
 
 * ** Sahil Mishra ** - *Initial work* - [sahilmishra0012](https://github.com/sahilmishra0012)
