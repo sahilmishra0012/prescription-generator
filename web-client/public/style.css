@@ -1,0 +1,145 @@
+body{
+    font-family: 'Gayathri', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #eee3e6;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+}
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.container h1{
+    font-size: 2.5rem;
+}
+.container{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 7rem;
+}
+.container input{
+    display: block;
+    margin: auto;
+    height: 3rem;
+    width: 25rem;
+    border: 0.5px solid gray;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.container textarea{
+    display: block;
+    margin: auto;
+    height: 9rem;
+    width: 25rem;
+    border: 0.5px solid gray;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+input:focus-within{
+    border: 2px solid rgb(248, 70, 70);
+}
+.container ::placeholder {
+    text-align: center;
+    font-size: 1.25rem;
+}
+button{
+    width: 12rem;
+    height: 3.5rem;
+    color: white;
+    border-radius: 25px;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.login{
+    background-color: rgb(33, 207, 207);
+}
+.signup{
+    background-color: tomato;
+}
+.login:hover{
+    background-color: rgb(88, 246, 246);
+}
+.signup:hover{
+    background-color: rgb(255, 143, 123);
+}
+.forgot{
+    width: 17rem;
+    margin-top: 0.5rem;
+    margin-bottom: 10rem;
+    background-color: rgb(13, 139, 13);
+}
+.forgot:hover{
+    background-color: rgb(73, 197, 73);
+}
+.circle{
+    background-color: rgb(255, 212, 71);
+}
+.circle:hover{
+    background-color: rgb(251, 224, 134);
+}
+header {
+  text-align: center;
+  background-color: #1375f5;
+  margin: auto -16px;
+  padding: 8px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+#issue {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 280px;
+    height: 300px;
+    margin: 16px;
+    float: left;
+}
+#issue h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+#issue h4 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    margin-left: 85%;
+}
+#issue p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#issue button{
+    position: relative;
+    top: 3rem;
+    float: right;
+    margin-right: 10px;
+    color: #1375f5;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+}
+  
+a:link{
+    color: rgb(57, 57, 243);
+}
+a:visited{
+    color: darkmagenta;
+}
+.hide{
+    display: none;
+}

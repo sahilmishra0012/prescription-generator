@@ -1,0 +1,21 @@
+{
+  "name": "student_grievance_redressal_portal",
+  "version": "1.0.0",
+  "description": "Student complaints portal for institutions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Negi",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "mongoose": "^5.8.10",
+    "particlesjs": "^2.2.3",
+    "path": "^0.12.7"
+  }
+}

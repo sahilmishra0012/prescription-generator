@@ -1,0 +1,9 @@
+<%- include('partials/header'); %>
+    <form action="/prescription" class="create-complaint" method="POST">
+        <input type="text" id="title" name="title" placeholder="Prescription Title">
+        <textarea rows="2" name="content" value="content" placeholder="The consultation"></textarea>
+        <input type="hidden" name="usrId" value="<%=Id%>">
+        <button type="submit" class="circle">+</button>
+    </form>
+
+<%- include('partials/footer'); %>
