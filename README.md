@@ -20,7 +20,7 @@ To know more about Flutter visit <https://flutter.dev/.>
 
 To get started, just fork or clone the GitHub Repository.
 
-To clone the repository: git clone <https://github.com/sahilmishra0012/prescription-generator.git>
+To clone the repository: 'git clone <https://github.com/sahilmishra0012/prescription-generator.git>'
 
 To download Flutter - <https://flutter.dev/docs/get-started/install>
 
