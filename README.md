@@ -2,7 +2,7 @@
 
 This project aims to provide the facility of an automatic prescription generation from the voice of the doctors. This consists of a cross-platform app developed using Flutter as Frontend Framework built on the top of Backend using Dart.
 
-## Getting Started
+## Getting Started       
 
 To know more about Flutter visit <https://flutter.dev/.>
 
